@@ -194,6 +194,26 @@ h4 {
 	.about-wrap .row-wrap:nth-child(2n+1) .row .col-md-6:nth-child(2)::before {content:' ';left:100%;}
 	.about-wrap .row-wrap:nth-child(2n+1) .about-bl {padding-left:60px;padding-right:15px;}
 
+.text-wrap {
+	position:relative;
+	}
+	.text-wrap .text-bl {
+		display:block;
+		opacity:0.5;
+		overflow:hidden;
+		width:100% !important;
+		height:0;
+		padding:0;
+		margin:0;
+		-moz-transition:opacity 500ms ease 0ms;
+		-webkit-transition:opacity 500ms ease 0ms;
+		transition:opacity 500ms ease 0ms;
+		}
+	.text-wrap .text-bl.open {
+		opacity:1;
+		height:auto;
+		}
+
 @media screen and (max-width: 1600px) {
 	.site-header {background-size:100% auto;}
 }
